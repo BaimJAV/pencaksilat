@@ -1,0 +1,211 @@
+
+/* CSS QUIZ */
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  color: #afff;
+  background: #000000;
+  overflow: hidden;
+}
+
+.header {
+  position: fixe;
+  top: 0;
+  left: 0;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+/*LOGO QUIZ*/
+.logo {
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+
+}
+
+/* NAVBAR*/
+.navbar a {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 35px;
+  transition: .3s;
+}
+
+/*AGAR SAAT INGIN KLIK TEXT DAPAT AKTIF/BERUBAH WARNA*/
+.navbar a:hover {
+  color: #c40094;
+}
+
+/*BACKGROUND*/
+.main {
+  min-height: 100vh;
+  background: url('https://img.freepik.com/free-vector/gradient-hexagonal-background_23-2148954968.jpg?t=st=1714977997~exp=1714978597~hmac=57c305ebdeea30e7cfb32076294efbcf33e78c40d39826468c9b351c5ccf0ed1') no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: .3s ease;
+}
+
+.main.active {
+  filter: blur(15px);
+  pointer-events: none;
+}
+.container{
+  display: flex;
+  height: 100vh;
+  width: 200%;
+}
+/*TEXT QUIZ*/
+.main.active {
+    filter: blur(15px);
+    pointer-events: none;
+  }
+  .container{
+    display: flex;
+    height: 100vh;
+    width: 200%;
+  }
+  
+  .home {
+    position: relative;
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-content {
+    color: #fffefe;
+    display: flex;
+    max-width: 600px;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .home-content h1 {
+    font-size: 70px;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgb(0, 0, 0, .1);
+  }
+  
+  .home-content p {
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 0 0 10px rgb(0, 0, 0, .1);
+    margin-bottom: 30px;
+  }
+  
+  .home-content .start-btn {
+    width: 190px;
+    height: 55px;
+    background: #c40094;
+    border: 7px solid #afff;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #2343f8;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+  
+  }
+  
+  .home-content .start-btn:hover {
+    background: #000000;
+    box-shadow: none;
+  }
+  
+  .popup-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%) scale(.9);
+    width: 500px;
+    background: #000000;
+    border-radius: 6px;
+    padding: 10px 25px;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s ease;
+  }
+  
+  .popup-info.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%)scale(1);
+  
+  }
+  
+  .popup-info h2 {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .popup-info .info {
+    display: inline-block;
+    align-items: center;
+    font-size: 16px;
+    color: rgb(173, 158, 255);
+    font-weight: 500;
+    margin: 4px 0;
+  }
+  
+  .popup-info .btn-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .popup-info .btn-group .info-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 45px;
+    background: fuchsia;
+    border: 2px solid rgb(115, 86, 245);
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: .5s;
+  }
+  
+  .popup-info .btn-group .info-btn:nth-child(1) {
+    background: transparent;
+    color: #fffefe;
+  }
+  
+  .popup-info .btn-group .info-btn:nth-child(1):hover {
+    background: #51fc7c;
+    color: #fffefe;
+  }
+  
+  .popup-info .btn-group .info-btn:nth-child(2):hover {
+    background: #51fc7c;
+    color: #fffefe;
+  }
+  .quiz-section{
+    position: relative;
+    /*left: -50%;*/
+    width: 100%;
+    background: rgb(0, 4, 255);
+    transition: .8s ease-in-out;
+    transition-delay: .25s;
+    z-index: 100;
+  }
+  .quiz-section-active{
+  left: 0;
+  
+  }

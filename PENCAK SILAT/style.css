@@ -1,0 +1,38 @@
+/* CSS LPG PENCAK SILAT*/
+.banner {
+  background: url("https://i.pinimg.com/550x/75/45/6f/75456f20768ff8a5e8c539053588965d.jpg") no-repeat center center;
+  background-size: cover;
+  background-color: #000000;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  color: #fffefe;
+}
+
+
+.crop-img {
+  object-fit: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border box;
+  font-family: 'Poppins', sans-serif;
+}
+.tautan-container {
+  text-align: center; 
+}
+.tautan {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; 
+  color: white; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  font-weight: bold; 
+  transition: background-color 0.3s ease;
+}
+
+.tautan:hover {
+  background-color: #0056b3; 
+}
